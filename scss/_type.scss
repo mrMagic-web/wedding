@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'Debby';
+    src: url('../font/Debby.ttf');
+    src: url('../font/Debby.eot'),
+    	url('../font/Debby.eot?#iefix') format('embedded-opentype'),
+        url('../font/Debby.woff2') format('woff2'),
+        url('../font/Debby.woff') format('woff'),
+        url('../font/Debby.svg#Debby') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "slick";
+    src: slick-font-url("../font/slick.eot");
+    src: slick-font-url("../font/slick.eot?#iefix") format("embedded-opentype"), slick-font-url("../font/slick.woff") format("woff"), slick-font-url("../font/slick.ttf") format("truetype"), slick-font-url("../font/slick.svg#slick") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
