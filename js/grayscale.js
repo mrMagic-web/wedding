@@ -233,6 +233,7 @@ $('.slider').slick({
   dots: true,
   infinite: true,
   speed: 500,
+  adaptiveHeight: true,
   fade: true,
   cssEase: 'linear',
   autoplay: true,
@@ -241,3 +242,19 @@ $('.slider').slick({
   nextArrow: '<i class="fa fa-angle-right"></i>',
   prevArrow: '<i class="fa fa-angle-left"></i>',
 });
+
+$(document).ready(function(){
+  var $win = $(window);
+  var winH = $win.height(); 
+  
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > winH/2) {
+      $(".navbar").addClass("stay-top");   
+    }
+
+    else{
+      $(".navbar").removeClass("stay-top");
+    }
+  })
+})
