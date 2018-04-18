@@ -53,8 +53,19 @@ a {
   margin-bottom: 0;
   position: absolute;
   width: 100%;
+  .ml-auto {
+    margin: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
   .navbar{
     min-width: 320px;
+    padding: 15px;
+  }
+  .navbar-toggler {
+    border: none;
   }
   .navbar-fixed-top {
     position: fixed;
@@ -65,8 +76,8 @@ a {
     display: flex;
     justify-content: center;
     transition: all 0.3s;
-    background-color: transparent;
-    @media(min-width:768px) {
+    background-color: white;
+    @media(min-width:992px) {
       top: 20px;
     }
     &.stay-top {
@@ -78,21 +89,19 @@ a {
     color: black;
     font-weight: bold;
   }
+
   .navbar-nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    @media(min-width:768px) {
+     @media(min-width:992px) {
       flex-direction: row;
     }
     .nav-item {
       z-index: 10;
-      padding: 2px 6px;
-      @media(min-width:768px) {
-        padding: 5px 10px;
-      }
+      padding: 5px 10px;
     }
   }
   .nav-link {
@@ -141,12 +150,17 @@ a {
   text-align: center;
 
   color: white;
-  background: url('../img/intro-bg.jpg') no-repeat scroll;
+  background: url('../img/baner-pl.jpg') no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
+
+  &.en {
+    background-image: url('../img/baner-en.jpg');
+  }
+
   .intro-body {
     position: absolute;
     bottom: 20px;
@@ -185,15 +199,15 @@ a {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent;
   &:focus,
   &:hover {
-    color: white;
+    color: black;
     outline: none;
-    background: fade-out(white, .9);
+    background: fade-out(black, .9);
   }
 }
 

@@ -334,8 +334,22 @@ a:focus, a:hover {
   width: 100%;
 }
 
+#mainNav .ml-auto {
+  margin: auto;
+}
+
+#mainNav .container {
+  display: flex;
+  justify-content: center;
+}
+
 #mainNav .navbar {
   min-width: 320px;
+  padding: 15px;
+}
+
+#mainNav .navbar-toggler {
+  border: none;
 }
 
 #mainNav .navbar-fixed-top {
@@ -347,10 +361,10 @@ a:focus, a:hover {
   display: flex;
   justify-content: center;
   transition: all 0.3s;
-  background-color: transparent;
+  background-color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mainNav .navbar-fixed-top {
     top: 20px;
   }
@@ -374,7 +388,7 @@ a:focus, a:hover {
   flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #mainNav .navbar-nav {
     flex-direction: row;
   }
@@ -382,13 +396,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-nav .nav-item {
   z-index: 10;
-  padding: 2px 6px;
-}
-
-@media (min-width: 768px) {
-  #mainNav .navbar-nav .nav-item {
-    padding: 5px 10px;
-  }
+  padding: 5px 10px;
 }
 
 #mainNav .nav-link {
@@ -433,12 +441,16 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/intro-bg.jpg") no-repeat scroll;
+  background: url("../img/baner-pl.jpg") no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center center;
+}
+
+.masthead.en {
+  background-image: url("../img/baner-en.jpg");
 }
 
 .masthead .intro-body {
@@ -478,16 +490,16 @@ a:focus, a:hover {
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: black;
+  border: 2px solid black;
   border-radius: 100% !important;
   background: transparent;
 }
 
 .btn-circle:focus, .btn-circle:hover {
-  color: white;
+  color: black;
   outline: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .branch {
