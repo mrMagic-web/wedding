@@ -406,9 +406,9 @@ a:focus, a:hover {
 #mainNav .nav-link.language {
   color: white;
   background-color: black;
-  max-width: 150px;
+  max-width: 120px;
   display: inline-block;
-  width: 150px;
+  width: 120px;
 }
 
 #mainNav .nav-link.active {
